@@ -9,7 +9,7 @@ Every price was read from the vendor's own pricing page on **2026-08-12** and li
 - [Which one do I need?](#which-one-do-i-need)
 - [SERP APIs](#serp-apis) · [SerpApi](#serpapi) · [DataForSEO](#dataforseo) · [Bright Data](#bright-data) · [Oxylabs](#oxylabs) · [cloro](#cloro) · [Scrapingdog](#scrapingdog) · [SearchApi](#searchapi)
 - [Which of these cover the AI answer surfaces?](#which-of-these-cover-the-ai-answer-surfaces)
-- [Independent indexes for agents](#independent-indexes-for-agents) · [Exa](#exa) · [Tavily](#tavily) · [Brave](#brave-search-api) · [Firecrawl](#firecrawl)
+- [Independent indexes for agents](#independent-indexes-for-agents) · [Exa](#exa) · [Tavily](#tavily) · [Brave](#brave-search-api) · [Firecrawl](#firecrawl) · [Vend](#vend)
 - [Also in this category](#also-in-this-category)
 - [The five questions worth asking any vendor](#the-five-questions-worth-asking-any-vendor)
 - [How this list is made](#how-this-list-is-made)
@@ -161,6 +161,15 @@ One of the few genuinely independent web indexes at real scale, rather than a re
 Crawl-and-extract rather than search. Point it at a site and get markdown back, which is the right tool when the job is ingestion rather than ranking.
 
 **Pricing.** Hobby **$16/mo billed yearly for 5,000 pages, 5 concurrent** ([pricing](https://www.firecrawl.dev/pricing)).
+
+### Vend
+
+A pay-per-call web-search and page-extraction API for agents, settled in Nano (XNO) through the x402 v2 protocol — no API key, no sign-up. Search returns structured results, and each result already carries the fetched page text, so a downstream agent does not re-scrape.
+
+**Pricing.** **0.0001 XNO per call**, web search or page extraction ([pricing](https://paypercall.dev)). An XNO settle is feeless, which is what makes a sub-cent per-request price work; the flip side is that a caller needs an x402-capable client or Nano wallet, and the fiat price moves with the XNO market rate (the XNO amount itself is fixed).
+
+**Where it fits.** RAG and agent loops where you want a no-key endpoint and per-call rather than monthly pricing. It cannot tell you where you rank on Google — it reads its own crawl and index, not a Google SERP.
+
 
 ## Also in this category
 
