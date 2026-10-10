@@ -166,10 +166,9 @@ Crawl-and-extract rather than search. Point it at a site and get markdown back, 
 
 A pay-per-call web-search and page-extraction API for agents, settled in Nano (XNO) through the x402 v2 protocol — no API key, no sign-up. Search returns structured results, and each result already carries the fetched page text, so a downstream agent does not re-scrape.
 
-**Pricing.** **0.0001 XNO per call**, web search or page extraction ([pricing](https://paypercall.dev)). An XNO settle is feeless, which is what makes a sub-cent per-request price work; the flip side is that a caller needs an x402-capable client or Nano wallet, and the fiat price moves with the XNO market rate (the XNO amount itself is fixed).
+**Pricing.** **0.0001 XNO per call**, web search or page extraction, read on 2026-09-26 ([pricing](https://paypercall.dev)). An XNO settle is feeless, which is what makes a sub-cent per-request price work; the flip side is that a caller needs an x402-capable client or Nano wallet, and the fiat price moves with the XNO market rate (the XNO amount itself is fixed).
 
 **Where it fits.** RAG and agent loops where you want a no-key endpoint and per-call rather than monthly pricing. It cannot tell you where you rank on Google — it reads its own crawl and index, not a Google SERP.
-
 
 ## Also in this category
 
